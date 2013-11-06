@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    e2fsck
+
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8960 \
@@ -103,7 +107,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
-    lpa.decode=true \
+    lpa.decode=false \
     persist.audio.fluence.mode=endfire \
     persist.audio.vr.enable=false \
     persist.audio.handset.mic=digital \
